@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	section.hero.is-fullheight.is-default.is-bold
+		.hero-head
+			.container
+				nav.nav.has-shadow
+					.container
+						.nav-left
+							a.nav-item(href='../index.html')
+								//-img(src='/images/skullandcross.png', alt='Skin & Bones')
+						span.nav-toggle
+							span
+							span
+							span
+						.nav-right.nav-menu
+							a.nav-item.is-tab.is-active
+								| Home
+							a.nav-item.is-tab
+								| Videos
+							a.nav-item.is-tab
+								| Blog
+							span.nav-item
+								a.button.is-primary
+									| Newsletter
+		.hero-body
+			.container.has-text-centered
+				.columns.is-vcentered
+					.column.is-5.is-offset-1
+						figure.image
+							img(src='/images/logo.png', alt='Description')
+					.column.is-6
+						h1.title.is-2
+							| An Anatomy Adventure
+						h2.subtitle.is-4
+							| by Raven
+						br
+						p.has-text-centered
+							a.button.is-large
+								| Learn more
+		.hero-foot
+			.container
+				.tabs.is-centered
+					ul
+						li
+					//-		a And this at the bottom
